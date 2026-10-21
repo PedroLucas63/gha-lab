@@ -1,0 +1,20 @@
+name: 02. Eventos
+on: 
+    workflow_dispatch:
+        inputs:
+            name:
+                description: "Quem você quer cumprimentar?"
+                required: true
+                default: "turma"
+    push:
+        paths:
+            - src/**
+jobs:
+    cumprimentar:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Imprimir mensagem
+              env:
+                NOME: ${{ inputs.name }}
+              run: echo "Olá, $NOME ($GITHUB_EVENT_NAME)"
+    
