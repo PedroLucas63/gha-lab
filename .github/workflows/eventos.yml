@@ -6,9 +6,16 @@ on:
                 description: "Quem você quer cumprimentar?"
                 required: true
                 default: "turma"
+                type: choice
+                options:
+                    - alunos
+                    - turma
+                    - professor
     push:
         paths:
             - src/**
+    schedule:
+        - cron: "*/5 * * * *"
 jobs:
     cumprimentar:
         runs-on: ubuntu-latest
