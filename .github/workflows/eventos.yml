@@ -14,7 +14,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Imprimir mensagem
-              env:
-                NOME: ${{ inputs.name }}
-              run: echo "Olá, $NOME ($GITHUB_EVENT_NAME)"
+              run: echo "Olá, ${{ inputs.name }} ($GITHUB_EVENT_NAME)"
     
