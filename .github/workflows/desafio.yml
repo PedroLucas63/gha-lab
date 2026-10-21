@@ -1,0 +1,11 @@
+name: 01. Contexto
+on: 
+    push: 
+    workflow_dispatch:
+jobs:
+    show:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Contexto do Github em JSON
+              run: |
+                echo "${{ toJSON(github) }}"
