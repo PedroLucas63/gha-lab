@@ -11,8 +11,6 @@ on:
                     - alunos
                     - turma
                     - professor
-    schedule:
-        - cron: "*/5 * * * *"
     push:
         paths:
             - src/**

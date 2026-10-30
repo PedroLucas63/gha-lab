@@ -4,6 +4,8 @@ Projeto-base do laboratório de GitHub Actions (Aula 2): um pacote Python mínim
 (`calc`) com seis testes. Você **não precisa instalar Python** — todas as
 ferramentas rodam em um contêiner Docker.
 
+![CI](https://github.com/PedroLucas63/gha-lab/actions/workflows/ci.yml/badge.svg)
+
 ## 1. Construir a imagem (uma vez)
 
 Na pasta do projeto (onde está o `Dockerfile`):
